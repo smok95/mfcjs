@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta NAME="GENERATOR" Content="Microsoft FrontPage 6.0">
+<title></title>
+</head>
+<body>
+<P align=center><STRONG><FONT color=#FFFF00 size=7>Hello!</FONT></STRONG></P>
+<p align="center"><strong><font color="#00FFFF" size="4">This is the HTML Page
+for testing Java Script calls from C++</font></strong></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="50%">
+      <p align="center"><u><b><font color="#FFFF00">Function Name</font></b></u></td>
+    <td width="50%"><b><u><font color="#FFFF00">Number Of Parameters</font></u></b></td>
+  </tr>
+  <tr>
+    <td width="50%"><font color="#FFFFFF">Welcome</font></td>
+    <td width="50%"><font color="#FFFFFF">None</font></td>
+	<SCRIPT LANGUAGE=javascript>
+    	function Welcome() 
+    	{
+    		var text = "Welcome!\nYou've got Welcome Java Script Function.\n\nCongratulation!"
+  			alert(text);
+		}
+	</SCRIPT>
+  </tr>
+  <tr>
+    <td width="50%"><font color="#FFFFFF">Hello</font></td>
+    <td width="50%"><font color="#FFFFFF">1, put some name as parameter</font></td>
+	<SCRIPT LANGUAGE=javascript>
+    	function Hello(name) 
+    	{
+    		var text = "Hello " + name + "!\nYou've got Hello Java Script Function.\n\nCongratulation!"
+  			alert(text);
+		}
+	</SCRIPT>
+  </tr>
+  <tr>
+    <td width="50%"><font color="#FFFFFF">Multiply</font></td>
+    <td width="50%"><font color="#FFFFFF">2, put two numbers to get result</font></td>
+	<SCRIPT LANGUAGE=javascript>
+    	function Multiply(v1,v2) 
+    	{
+    		if(v1 == null || v2 == null)
+    		{
+    			alert("Hi,The numbers of parameters are wrong.\nTry again please.\nNumbers of parameters should equal to 2");
+    		}
+    		else
+    		{
+    			var v3 = v1*v2;
+    			var text = "Congratulation!\nThe result is: " + v1 + " * " + v2 + " = " + v3;
+  				alert(text);
+  			}
+		}
+		
+		function btn1_click()
+		{
+			window.external.CppFunc("안녕하세요 ! 반가워요!")
+		}
+	</SCRIPT>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<input type="button" id="btn1" onclick="btn1_click();" value="CppFunc() 호출"/>
+<p>&nbsp;</p>
+<p align="center"><font size="4" color="#FFFF00">Like an idea?</font></p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="hidden" name="cmd" value="_s-xclick">
+</form></p>
+<p align="center">&nbsp;</p>
+</body>
+</html>
